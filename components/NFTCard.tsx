@@ -1,6 +1,10 @@
 import { View, Text } from 'react-native';
 
-const NFTCard = () => {
+interface Props {
+  data: any;
+}
+
+const NFTCard = ({ data }: Props) => {
   return (
     <View>
       <Text>NFT CARD</Text>
