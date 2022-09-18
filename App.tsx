@@ -2,7 +2,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 
 import Home from './screens/Home';
-// import Details from './screens/Details';
+import Details from './screens/Details';
 
 import { useFonts } from 'expo-font';
 
@@ -34,7 +34,7 @@ const App = () => {
         initialRouteName='Home'
       >
         <Stack.Screen name='Home' component={Home} />
-        {/* <Stack.Screen name='Details' component={Details} /> */}
+        <Stack.Screen name='Details' component={Details} />
       </Stack.Navigator>
     </NavigationContainer>
   );
