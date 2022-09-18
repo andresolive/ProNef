@@ -1,6 +1,8 @@
 import { View, Image, Text } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
+import { CircleButton } from '.';
+
 import { COLORS, SIZES, SHADOWS, assets } from '../constants';
 
 interface Props {
@@ -30,6 +32,8 @@ const NFTCard = ({ data }: Props) => {
             borderTopRightRadius: SIZES.font,
           }}
         />
+
+        <CircleButton imgUrl={assets.heart} right={10} top={10} />
       </View>
       <Text>THE NFT CARD</Text>
     </View>
